@@ -84,11 +84,11 @@
 -(NSArray *)getTrackingArray:(NSString *)strET {
     NSMutableArray *arrReturn = [NSMutableArray array];
     if (self.arrTracking) {
-        for (int i = 0; i<self.arrAction.count; i++) {
-            NSDictionary *dict = [self.arrAction objectAtIndex:i];
+        for (int i = 0; i<self.arrTracking.count; i++) {
+            NSDictionary *dict = [self.arrTracking objectAtIndex:i];
             if ([dict isKindOfClass:[NSDictionary class]]) {
-                if ([[[dict objectForKey:@"et"] stringValue] isEqualToString:strET] && [dict objectForKey:@"eu"]) {
-                    [arrReturn addObject:[dict objectForKey:@"eu"]];
+                if ([[[dict objectForKey:@"et"] stringValue] isEqualToString:strET] && [dict objectForKey:@"tku"]) {
+                    [arrReturn addObjectsFromArray:[dict objectForKey:@"tku"]];
                 }
             }
         }

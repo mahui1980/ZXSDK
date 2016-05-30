@@ -61,13 +61,16 @@
             [[NSNotificationCenter defaultCenter] removeObserver:self];
             [self removeMoviePlayer];
             self.hidden = YES;
-            [self.superview removeFromSuperview];
             break;
         }
         default:
             break;
     }
 }
+
+
+
+
 /*视频播放结束*/
 - (void)playBackFinished:(NSNotification *)notification
 {
@@ -76,7 +79,6 @@
     [self.adModel sendTracking:@"23"];
     [self removeMoviePlayer];
     self.hidden = YES;
-    [self.superview removeFromSuperview];
     
     
 }
@@ -86,7 +88,6 @@
     [self removeMoviePlayer];
     [self.adModel sendTracking:@"20"];
     self.hidden = YES;
-    [self.superview removeFromSuperview];
 }
 /*删除player播放*/
 - (void)removeMoviePlayer
@@ -124,7 +125,7 @@
     // Add Playback Listener
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBackChanged:) name:MPMoviePlayerPlaybackStateDidChangeNotification object:nil];
     
-    
+    [self startPlaying];
     
 }
 /*开始播放*/
