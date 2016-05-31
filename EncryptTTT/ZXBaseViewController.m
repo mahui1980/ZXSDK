@@ -29,7 +29,7 @@
     self.txtAID.layer.cornerRadius = 5;
     self.txtAID.returnKeyType = UIReturnKeyNext;
     self.txtAID.placeholder = @"输入AID";
-    UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, -1 , 40, 45)];
+    UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, -1 , 50, 45)];
     nameLabel.text = @"  AID:";
     nameLabel.font = [UIFont systemFontOfSize:14];
     nameLabel.textAlignment = NSTextAlignmentLeft;
@@ -45,7 +45,7 @@
     self.txtCLID.layer.cornerRadius = 5;
     self.txtCLID.returnKeyType = UIReturnKeyNext;
     self.txtCLID.placeholder = @"输入CLID";
-    nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, -1 , 40, 45)];
+    nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, -1 , 50, 45)];
     nameLabel.text = @"  CLID:";
     nameLabel.font = [UIFont systemFontOfSize:14];
     nameLabel.textAlignment = NSTextAlignmentLeft;

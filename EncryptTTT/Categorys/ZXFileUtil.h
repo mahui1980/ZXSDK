@@ -1,17 +1,8 @@
-/************************************************
- *fileName:     ACStringUtil.h
- *description:  File处理
- *function detail:File处理
- *delegate:
- *Created by:Chilly Zhong
- *Created date:12-1-4
- *Modified by:Joson Ma on 2013-1-23
- *Copyright 2011-2013 AdChina. All rights reserved.
- ************************************************/
+
 
 #import <Foundation/Foundation.h>
 
-@interface ACFileUtil : NSObject
+@interface ZXFileUtil : NSObject
 //cache路径
 + (NSString *)cachePath;
 //本地路径

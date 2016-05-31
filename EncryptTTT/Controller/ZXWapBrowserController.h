@@ -1,21 +1,8 @@
-/************************************************
- *fileName:     ACWebBrowserToolBar.m
- *description:  web view controller,网页页面控制controller
- *function detail:(1)web控制
- *                (2)方向控制
- *                (3)toolbar控制
- *
- *delegate: UIWebViewDelegate
- *
- *Created by:Chilly Zhong
- *Created date:12-1-15
- *modify by:Joson Ma on 2013-3-4
- *Copyright 2011-2013 AdChina. All rights reserved.
- ************************************************/
-#import <UIKit/UIKit.h>
-#import "ACWebBrowserToolBar.h"
 
-@protocol ACWapBrowserDelegate;
+#import <UIKit/UIKit.h>
+#import "ZXWebBrowserToolBar.h"
+
+@protocol ZXWapBrowserDelegate;
 
 typedef enum {
     StateIdel,
@@ -35,7 +22,7 @@ typedef enum {
     // hidden button
 } ToolItemIndex;
 
-@interface ACWapBrowserController : UIViewController <UIWebViewDelegate>
+@interface ZXWapBrowserController : UIViewController <UIWebViewDelegate>
 {
     UIWebView *webView;
     UINavigationBar *navBar;
@@ -45,11 +32,11 @@ typedef enum {
     
 }
 
-+ (ACWapBrowserController *)sharedWapBrowserController;
++ (ZXWapBrowserController *)sharedWapBrowserController;
 + (void)clearOldWapBrowser;
 - (void)setOpaqueForWebView:(BOOL)isOpaque;
 
-@property (nonatomic, retain) id<ACWapBrowserDelegate,UIWebViewDelegate> delegate;
+@property (nonatomic, retain) id<ZXWapBrowserDelegate,UIWebViewDelegate> delegate;
 //@property (nonatomic, assign) UIViewController *parentViewControllerForBrowser;
 @property (nonatomic, retain) NSString *wapSiteUrl;
 
@@ -68,7 +55,7 @@ typedef enum {
 
 @end
 
-@protocol ACWapBrowserDelegate <NSObject>
+@protocol ZXWapBrowserDelegate <NSObject>
 //读取WEB结束
 - (void)didFinishBrowsingWapSite;
 

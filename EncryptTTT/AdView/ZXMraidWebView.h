@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ACMraidWebView : UIWebView
+@interface ZXMraidWebView : UIWebView
 - (void)disableScrolling;
 - (void)disableSelection;
 - (void)scrollToTop;

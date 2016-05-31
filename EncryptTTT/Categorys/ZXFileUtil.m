@@ -1,15 +1,6 @@
-/************************************************
- *fileName:     ACStringUtil.m
- *description:  File处理
- *function detail:File处理
- *delegate:
- *Created by:Chilly Zhong
- *Created date:12-1-4
- *Modified by:Joson Ma on 2013-1-23
- *Copyright 2011-2013 AdChina. All rights reserved.
- ************************************************/
+
 #include <sys/xattr.h>
-#import "ACFileUtil.h"
+#import "ZXFileUtil.h"
 
 
 #define kAdChinaPath                @".ZXAdView"
@@ -26,7 +17,7 @@
 #define kAdchinaMraid               @"mraid.js"
 #define kTestFileName               @"ZXAdView-ios-test.plist"  //test.plist
 
-@implementation ACFileUtil
+@implementation ZXFileUtil
 
 #pragma -
 #pragma Path
@@ -85,7 +76,7 @@
 #pragma Save
 + (BOOL)saveData:(NSData *)data toFile:(NSString *)name
 {
-    @synchronized([ACFileUtil class]) {
+    @synchronized([ZXFileUtil class]) {
         return [data writeToFile:[self documentPathAppendName:name] atomically:YES];
     }
 }
@@ -98,7 +89,7 @@
 
 + (BOOL)saveDictionary:(NSDictionary *)dictionary toFile:(NSString *)name
 {
-    @synchronized([ACFileUtil class]) {
+    @synchronized([ZXFileUtil class]) {
         return [dictionary writeToFile:[self documentPathAppendName:name] atomically:YES];
     }
 }
@@ -252,8 +243,8 @@
 }
 
 + (void)deleteExpiredFiles {
-    [ACFileUtil deleteExpiredCaches];
-    [ACFileUtil deleteExpiredMonitors];
+    [ZXFileUtil deleteExpiredCaches];
+    [ZXFileUtil deleteExpiredMonitors];
 }
 
 + (void)deleteExpiredCaches
@@ -294,7 +285,7 @@
 + (void)deleteExpiredMonitors {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:kDateFormat];
-    NSArray *arrtemp = [ACFileUtil getMonitorsArray];
+    NSArray *arrtemp = [ZXFileUtil getMonitorsArray];
     NSString *fileName = nil;		// full file name with suffix
     NSString *dateString = nil;	// file name without siffix
     NSDate *cacheDate = nil;		// date from dateString

@@ -1,13 +1,4 @@
-/************************************************
- *fileName:     ACAnimationController.h
- *description:  添加动画
- *function detail:添加动画
- *delegate:
- *Created by:Chilly Zhong
- *Created date:12-2-15
- *modify by:Joson Ma on 2013-3-4
- *Copyright 2011-2013 AdChina. All rights reserved.
- ************************************************/
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -24,7 +15,7 @@ typedef enum {
 
 #define kFloatAnimDuration      0.3
 
-@interface ACAnimationController : NSObject
+@interface ZXAnimationController : NSObject
 //得到动画掩码
 + (AnimationMask)getAnimationMaskInMask:(AnimationMask)mask;
 //根据掩码为view添加动画

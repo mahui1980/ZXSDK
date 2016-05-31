@@ -1,14 +1,8 @@
-//
-//  ACMraidWebView.m
-//  AdChinaSDK_NARC
-//
-//  Created by MAP-AdChina on 10/22/13.
-//  Copyright (c) 2013 AdChina. All rights reserved.
-//
 
-#import "ACMraidWebView.h"
 
-@implementation ACMraidWebView
+#import "ZXMraidWebView.h"
+
+@implementation ZXMraidWebView
 
 - (id)initWithFrame:(CGRect)frame
 {

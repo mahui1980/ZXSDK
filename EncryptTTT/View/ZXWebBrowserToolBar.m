@@ -9,7 +9,7 @@
  *Copyright 2011-2013 AdChina. All rights reserved.
  ************************************************/
 
-#import "ACWebBrowserToolBar.h"
+#import "ZXWebBrowserToolBar.h"
 
 @implementation ACWebBrowserToolBar
 @synthesize isDrawn;

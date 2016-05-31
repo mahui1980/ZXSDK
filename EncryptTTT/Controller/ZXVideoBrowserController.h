@@ -10,10 +10,15 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+@class ZXVideoBrowserController;
+@protocol ZXVideoBrowserDelegate<NSObject>
 
-@protocol ACVideoBrowserDelegate;
+@optional
+-(void)didFinishBrowsingVideo:(ZXVideoBrowserController *) videoBrowserController;
 
-@interface ACVideoBrowserController : UIViewController {
+@end
+
+@interface ZXVideoBrowserController : UIViewController {
 
 }
 
@@ -21,14 +26,14 @@
 @property (nonatomic, retain) MPMoviePlayerController *moviePlayer;
 @property (nonatomic, assign) UIViewController *parentViewControllerForVideo;
 @property (nonatomic, retain) UIButton *closeButton;
-@property (nonatomic, retain) id<ACVideoBrowserDelegate> delegate;
+@property (nonatomic, weak) id<ZXVideoBrowserDelegate> delegate;
 
-+ (ACVideoBrowserController *)sharedVideoBrowserController;
++ (ZXVideoBrowserController *)sharedVideoBrowserController;
 //播放视频
 - (void)loadVideoWithUrl:(NSString *)url;
 - (void)addCloseButton;
 @end
 @protocol ACVideoBrowserDelegate <NSObject>
 //视频播放结束
--(void)didFinishBrowsingVideo:(ACVideoBrowserController *) videoBrowserController;
+-(void)didFinishBrowsingVideo:(ZXVideoBrowserController *) videoBrowserController;
 @end

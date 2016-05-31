@@ -9,9 +9,9 @@
 
 #import "ZXAdBaseView.h"
 #import "ZXAdDeviceUtil.h"
-#import "ACFileUtil.h"
+#import "ZXFileUtil.h"
 #import "Base64Util.h"
-#import "ACWebView.h"
+#import "ZXWebView.h"
 
 #import <AdSupport/ASIdentifierManager.h>
 static NSString* AdViewUserAgent = nil;
@@ -216,12 +216,12 @@ static NSString* AdViewUserAgent = nil;
 - (Boolean)timerTicked {
     Boolean bReturn = NO;
     
-    if ([ACUIUtil ADCHINAViewIsDescendantOfKeyWindow:self.superview]) {
+    if ([ZXUIUtil ADCHINAViewIsDescendantOfKeyWindow:self.superview]) {
         self.nRefresh--;
     }
     
     if (self.nRefresh <= 0) {
-        if ([ACUIUtil ADCHINAViewIsVisible:self]) {
+        if ([ZXUIUtil ADCHINAViewIsVisible:self]) {
             [self stopRefreshTimer];
             bReturn = YES;
         }
@@ -236,12 +236,12 @@ static NSString* AdViewUserAgent = nil;
 - (void)showWebViewWithUrl:(NSString *)url {
     if ([self.delegate isKindOfClass:[UIViewController class]]) {
         
-        [ACWapBrowserController clearOldWapBrowser];
-        ACWapBrowserController *browserViewController = [ACWapBrowserController sharedWapBrowserController];
+        [ZXWapBrowserController clearOldWapBrowser];
+        ZXWapBrowserController *browserViewController = [ZXWapBrowserController sharedWapBrowserController];
         browserViewController.delegate = self;
         browserViewController.wapSiteUrl = url;
         
-        [(UIViewController *)self.delegate presentViewController:[ACWapBrowserController sharedWapBrowserController] animated:YES completion:^{
+        [(UIViewController *)self.delegate presentViewController:[ZXWapBrowserController sharedWapBrowserController] animated:YES completion:^{
             self.adBrowserOpen = YES;
             [self stopRefreshTimer];
         }];
@@ -251,7 +251,7 @@ static NSString* AdViewUserAgent = nil;
 }
 
 - (void)didFinishBrowsingWapSite {
-    [[ACWapBrowserController sharedWapBrowserController] dismissViewControllerAnimated:YES completion:nil];
+    [[ZXWapBrowserController sharedWapBrowserController] dismissViewControllerAnimated:YES completion:nil];
     self.adBrowserOpen = NO;
     [self resumeStoppedRefreshTimer];
     if (self.delegate && [self.delegate respondsToSelector:@selector(didCloseLangingPage)]) {
@@ -267,7 +267,7 @@ static NSString* AdViewUserAgent = nil;
  *return:
  ************************************************/
 - (void)showVideoBrowserWithUrl:(NSString *)url {
-    ACVideoBrowserController *browserViewController = [ACVideoBrowserController sharedVideoBrowserController];
+    ZXVideoBrowserController *browserViewController = [ZXVideoBrowserController sharedVideoBrowserController];
     browserViewController.delegate = self;
     browserViewController.videoUrl = url;
     [(UIViewController *)self.delegate presentViewController:browserViewController animated:YES completion:^{
@@ -276,8 +276,8 @@ static NSString* AdViewUserAgent = nil;
     }];
 }
 
--(void)didFinishBrowsingVideo:(ACVideoBrowserController *) videoBrowserController{
-    [[ACVideoBrowserController sharedVideoBrowserController]  dismissViewControllerAnimated:YES completion:nil];
+-(void)didFinishBrowsingVideo:(ZXVideoBrowserController *) videoBrowserController{
+    [[ZXVideoBrowserController sharedVideoBrowserController]  dismissViewControllerAnimated:YES completion:nil];
     [self resumeStoppedRefreshTimer];
     if (self.delegate && [self.delegate respondsToSelector:@selector(didCloseLangingPage)]) {
         [self.delegate didCloseLangingPage];
@@ -340,7 +340,7 @@ static NSString* AdViewUserAgent = nil;
     
     CGSize size = CGSizeMake(fWidth, fheight);
     NSString *htmlString = [self getGifHtmlStringWithContentSize:size imgPath:imgPath  webView:theWebView];
-    [theWebView loadHTMLString:htmlString baseURL:[ACFileUtil getCachesUrl]];
+    [theWebView loadHTMLString:htmlString baseURL:[ZXFileUtil getCachesUrl]];
  
     return YES;
 }

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 DS. All rights reserved.
 //
 
-#import "ACWebView.h"
+#import "ZXWebView.h"
 
-@interface ZXInterstitialView : ACWebView
+@interface ZXInterstitialView : ZXWebView
 
 
 @property (nonatomic, strong) UIButton *closeButton;

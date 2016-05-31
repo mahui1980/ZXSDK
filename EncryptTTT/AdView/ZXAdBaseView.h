@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ACUIUtil.h"
+#import "ZXUIUtil.h"
 #import "ZXAdModel.h"
-#import "ACWapBrowserController.h"
-#import "ACVideoBrowserController.h"
+#import "ZXWapBrowserController.h"
+#import "ZXVideoBrowserController.h"
 #import "ZXAdConstant.h"
 @class ZXAdBaseView;
 @protocol ZXAdBaseViewDelegate<NSObject>
@@ -24,7 +24,7 @@
 
 @end
 
-@interface ZXAdBaseView : UIView<ACWapBrowserDelegate>
+@interface ZXAdBaseView : UIView<ZXWapBrowserDelegate>
 
 
 -(ZXAdBaseView *)initAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect;

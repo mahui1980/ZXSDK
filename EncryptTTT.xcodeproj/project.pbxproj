@@ -30,7 +30,7 @@
 		9A9300011CFB689600D1FB2E /* ZXInterstitialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9300001CFB689600D1FB2E /* ZXInterstitialView.m */; };
 		9A9300041CFB6B0C00D1FB2E /* ZXVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9300031CFB6B0C00D1FB2E /* ZXVideoView.m */; };
 		9A93FFF81CFB5D9400D1FB2E /* ZXBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A93FFF71CFB5D9400D1FB2E /* ZXBannerView.m */; };
-		9A93FFFB1CFB606E00D1FB2E /* ACAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A93FFFA1CFB606E00D1FB2E /* ACAnimationController.m */; };
+		9A93FFFB1CFB606E00D1FB2E /* ZXAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A93FFFA1CFB606E00D1FB2E /* ZXAnimationController.m */; };
 		9A93FFFE1CFB62DB00D1FB2E /* ZXFullScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A93FFFD1CFB62DB00D1FB2E /* ZXFullScreenView.m */; };
 		9AAFB1C21CEDF00B00D70626 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFB19B1CEDF00B00D70626 /* AFHTTPRequestOperation.m */; };
 		9AAFB1C31CEDF00B00D70626 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFB19D1CEDF00B00D70626 /* AFHTTPRequestOperationManager.m */; };
@@ -49,16 +49,16 @@
 		9AAFB1D21CEDF00B00D70626 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFB1BD1CEDF00B00D70626 /* UIProgressView+AFNetworking.m */; };
 		9AAFB1D31CEDF00B00D70626 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFB1BF1CEDF00B00D70626 /* UIRefreshControl+AFNetworking.m */; };
 		9AAFB1D41CEDF00B00D70626 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFB1C11CEDF00B00D70626 /* UIWebView+AFNetworking.m */; };
-		9AECFB6F1CFB1D6300CCA7DA /* ACUIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB6E1CFB1D6300CCA7DA /* ACUIUtil.m */; };
+		9AECFB6F1CFB1D6300CCA7DA /* ZXUIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB6E1CFB1D6300CCA7DA /* ZXUIUtil.m */; };
 		9AECFB731CFB1E7200CCA7DA /* ZXAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB721CFB1E7200CCA7DA /* ZXAdModel.m */; };
 		9AECFB761CFB1EF300CCA7DA /* ZXAdRequestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB751CFB1EF300CCA7DA /* ZXAdRequestView.m */; };
 		9AECFB781CFB202E00CCA7DA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AECFB771CFB202E00CCA7DA /* AdSupport.framework */; };
-		9AECFB7B1CFB2E4A00CCA7DA /* ACFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB7A1CFB2E4A00CCA7DA /* ACFileUtil.m */; };
-		9AECFB801CFB39A700CCA7DA /* ACMraidWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB7D1CFB39A700CCA7DA /* ACMraidWebView.m */; };
-		9AECFB811CFB39A700CCA7DA /* ACWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB7F1CFB39A700CCA7DA /* ACWebView.m */; };
-		9AECFB871CFB3A2600CCA7DA /* ACVideoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB841CFB3A2600CCA7DA /* ACVideoBrowserController.m */; };
-		9AECFB881CFB3A2600CCA7DA /* ACWapBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB861CFB3A2600CCA7DA /* ACWapBrowserController.m */; };
-		9AECFB8C1CFB3EC400CCA7DA /* ACWebBrowserToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB8B1CFB3EC400CCA7DA /* ACWebBrowserToolBar.m */; };
+		9AECFB7B1CFB2E4A00CCA7DA /* ZXFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB7A1CFB2E4A00CCA7DA /* ZXFileUtil.m */; };
+		9AECFB801CFB39A700CCA7DA /* ZXMraidWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB7D1CFB39A700CCA7DA /* ZXMraidWebView.m */; };
+		9AECFB811CFB39A700CCA7DA /* ZXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB7F1CFB39A700CCA7DA /* ZXWebView.m */; };
+		9AECFB871CFB3A2600CCA7DA /* ZXVideoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB841CFB3A2600CCA7DA /* ZXVideoBrowserController.m */; };
+		9AECFB881CFB3A2600CCA7DA /* ZXWapBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB861CFB3A2600CCA7DA /* ZXWapBrowserController.m */; };
+		9AECFB8C1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AECFB8B1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.m */; };
 		9AECFB9E1CFB3F0200CCA7DA /* adchina_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AECFB8E1CFB3F0200CCA7DA /* adchina_back.png */; };
 		9AECFB9F1CFB3F0200CCA7DA /* adchina_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AECFB8F1CFB3F0200CCA7DA /* adchina_back@2x.png */; };
 		9AECFBA01CFB3F0200CCA7DA /* adchina_btnconfirm.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AECFB901CFB3F0200CCA7DA /* adchina_btnconfirm.png */; };
@@ -119,8 +119,8 @@
 		9A9300031CFB6B0C00D1FB2E /* ZXVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXVideoView.m; path = AdView/ZXVideoView.m; sourceTree = "<group>"; };
 		9A93FFF61CFB5D9400D1FB2E /* ZXBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXBannerView.h; path = AdView/ZXBannerView.h; sourceTree = "<group>"; };
 		9A93FFF71CFB5D9400D1FB2E /* ZXBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXBannerView.m; path = AdView/ZXBannerView.m; sourceTree = "<group>"; };
-		9A93FFF91CFB606E00D1FB2E /* ACAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAnimationController.h; sourceTree = "<group>"; };
-		9A93FFFA1CFB606E00D1FB2E /* ACAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAnimationController.m; sourceTree = "<group>"; };
+		9A93FFF91CFB606E00D1FB2E /* ZXAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXAnimationController.h; sourceTree = "<group>"; };
+		9A93FFFA1CFB606E00D1FB2E /* ZXAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXAnimationController.m; sourceTree = "<group>"; };
 		9A93FFFC1CFB62DB00D1FB2E /* ZXFullScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXFullScreenView.h; path = AdView/ZXFullScreenView.h; sourceTree = "<group>"; };
 		9A93FFFD1CFB62DB00D1FB2E /* ZXFullScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXFullScreenView.m; path = AdView/ZXFullScreenView.m; sourceTree = "<group>"; };
 		9A93FFFF1CFB689600D1FB2E /* ZXInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXInterstitialView.h; path = AdView/ZXInterstitialView.h; sourceTree = "<group>"; };
@@ -161,25 +161,25 @@
 		9AAFB1BF1CEDF00B00D70626 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		9AAFB1C01CEDF00B00D70626 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		9AAFB1C11CEDF00B00D70626 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		9AECFB6D1CFB1D6300CCA7DA /* ACUIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUIUtil.h; sourceTree = "<group>"; };
-		9AECFB6E1CFB1D6300CCA7DA /* ACUIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACUIUtil.m; sourceTree = "<group>"; };
+		9AECFB6D1CFB1D6300CCA7DA /* ZXUIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXUIUtil.h; sourceTree = "<group>"; };
+		9AECFB6E1CFB1D6300CCA7DA /* ZXUIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXUIUtil.m; sourceTree = "<group>"; };
 		9AECFB711CFB1E7200CCA7DA /* ZXAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXAdModel.h; path = Model/ZXAdModel.h; sourceTree = "<group>"; };
 		9AECFB721CFB1E7200CCA7DA /* ZXAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXAdModel.m; path = Model/ZXAdModel.m; sourceTree = "<group>"; };
 		9AECFB741CFB1EF300CCA7DA /* ZXAdRequestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXAdRequestView.h; path = AdView/ZXAdRequestView.h; sourceTree = "<group>"; };
 		9AECFB751CFB1EF300CCA7DA /* ZXAdRequestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXAdRequestView.m; path = AdView/ZXAdRequestView.m; sourceTree = "<group>"; };
 		9AECFB771CFB202E00CCA7DA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		9AECFB791CFB2E4A00CCA7DA /* ACFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFileUtil.h; sourceTree = "<group>"; };
-		9AECFB7A1CFB2E4A00CCA7DA /* ACFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFileUtil.m; sourceTree = "<group>"; };
-		9AECFB7C1CFB39A700CCA7DA /* ACMraidWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACMraidWebView.h; path = AdView/ACMraidWebView.h; sourceTree = "<group>"; };
-		9AECFB7D1CFB39A700CCA7DA /* ACMraidWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACMraidWebView.m; path = AdView/ACMraidWebView.m; sourceTree = "<group>"; };
-		9AECFB7E1CFB39A700CCA7DA /* ACWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACWebView.h; path = AdView/ACWebView.h; sourceTree = "<group>"; };
-		9AECFB7F1CFB39A700CCA7DA /* ACWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACWebView.m; path = AdView/ACWebView.m; sourceTree = "<group>"; };
-		9AECFB831CFB3A2600CCA7DA /* ACVideoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACVideoBrowserController.h; path = Controller/ACVideoBrowserController.h; sourceTree = "<group>"; };
-		9AECFB841CFB3A2600CCA7DA /* ACVideoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACVideoBrowserController.m; path = Controller/ACVideoBrowserController.m; sourceTree = "<group>"; };
-		9AECFB851CFB3A2600CCA7DA /* ACWapBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACWapBrowserController.h; path = Controller/ACWapBrowserController.h; sourceTree = "<group>"; };
-		9AECFB861CFB3A2600CCA7DA /* ACWapBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACWapBrowserController.m; path = Controller/ACWapBrowserController.m; sourceTree = "<group>"; };
-		9AECFB8A1CFB3EC400CCA7DA /* ACWebBrowserToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWebBrowserToolBar.h; sourceTree = "<group>"; };
-		9AECFB8B1CFB3EC400CCA7DA /* ACWebBrowserToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACWebBrowserToolBar.m; sourceTree = "<group>"; };
+		9AECFB791CFB2E4A00CCA7DA /* ZXFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFileUtil.h; sourceTree = "<group>"; };
+		9AECFB7A1CFB2E4A00CCA7DA /* ZXFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFileUtil.m; sourceTree = "<group>"; };
+		9AECFB7C1CFB39A700CCA7DA /* ZXMraidWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXMraidWebView.h; path = AdView/ZXMraidWebView.h; sourceTree = "<group>"; };
+		9AECFB7D1CFB39A700CCA7DA /* ZXMraidWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXMraidWebView.m; path = AdView/ZXMraidWebView.m; sourceTree = "<group>"; };
+		9AECFB7E1CFB39A700CCA7DA /* ZXWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXWebView.h; path = AdView/ZXWebView.h; sourceTree = "<group>"; };
+		9AECFB7F1CFB39A700CCA7DA /* ZXWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXWebView.m; path = AdView/ZXWebView.m; sourceTree = "<group>"; };
+		9AECFB831CFB3A2600CCA7DA /* ZXVideoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXVideoBrowserController.h; path = Controller/ZXVideoBrowserController.h; sourceTree = "<group>"; };
+		9AECFB841CFB3A2600CCA7DA /* ZXVideoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXVideoBrowserController.m; path = Controller/ZXVideoBrowserController.m; sourceTree = "<group>"; };
+		9AECFB851CFB3A2600CCA7DA /* ZXWapBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXWapBrowserController.h; path = Controller/ZXWapBrowserController.h; sourceTree = "<group>"; };
+		9AECFB861CFB3A2600CCA7DA /* ZXWapBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXWapBrowserController.m; path = Controller/ZXWapBrowserController.m; sourceTree = "<group>"; };
+		9AECFB8A1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXWebBrowserToolBar.h; sourceTree = "<group>"; };
+		9AECFB8B1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXWebBrowserToolBar.m; sourceTree = "<group>"; };
 		9AECFB8E1CFB3F0200CCA7DA /* adchina_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adchina_back.png; sourceTree = "<group>"; };
 		9AECFB8F1CFB3F0200CCA7DA /* adchina_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adchina_back@2x.png"; sourceTree = "<group>"; };
 		9AECFB901CFB3F0200CCA7DA /* adchina_btnconfirm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adchina_btnconfirm.png; sourceTree = "<group>"; };
@@ -227,10 +227,10 @@
 		8411805F1CEC1044002542AB /* AdView */ = {
 			isa = PBXGroup;
 			children = (
-				9AECFB7C1CFB39A700CCA7DA /* ACMraidWebView.h */,
-				9AECFB7D1CFB39A700CCA7DA /* ACMraidWebView.m */,
-				9AECFB7E1CFB39A700CCA7DA /* ACWebView.h */,
-				9AECFB7F1CFB39A700CCA7DA /* ACWebView.m */,
+				9AECFB7C1CFB39A700CCA7DA /* ZXMraidWebView.h */,
+				9AECFB7D1CFB39A700CCA7DA /* ZXMraidWebView.m */,
+				9AECFB7E1CFB39A700CCA7DA /* ZXWebView.h */,
+				9AECFB7F1CFB39A700CCA7DA /* ZXWebView.m */,
 				841180601CEC1084002542AB /* ZXAdBaseView.h */,
 				841180611CEC1084002542AB /* ZXAdBaseView.m */,
 				841180631CEC195F002542AB /* ZXAdDeviceUtil.h */,
@@ -253,12 +253,12 @@
 		841180671CEC36B7002542AB /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
-				9A93FFF91CFB606E00D1FB2E /* ACAnimationController.h */,
-				9A93FFFA1CFB606E00D1FB2E /* ACAnimationController.m */,
-				9AECFB791CFB2E4A00CCA7DA /* ACFileUtil.h */,
-				9AECFB7A1CFB2E4A00CCA7DA /* ACFileUtil.m */,
-				9AECFB6D1CFB1D6300CCA7DA /* ACUIUtil.h */,
-				9AECFB6E1CFB1D6300CCA7DA /* ACUIUtil.m */,
+				9A93FFF91CFB606E00D1FB2E /* ZXAnimationController.h */,
+				9A93FFFA1CFB606E00D1FB2E /* ZXAnimationController.m */,
+				9AECFB791CFB2E4A00CCA7DA /* ZXFileUtil.h */,
+				9AECFB7A1CFB2E4A00CCA7DA /* ZXFileUtil.m */,
+				9AECFB6D1CFB1D6300CCA7DA /* ZXUIUtil.h */,
+				9AECFB6E1CFB1D6300CCA7DA /* ZXUIUtil.m */,
 				841180681CEC36B7002542AB /* NSDictionary+URL.h */,
 				841180691CEC36B7002542AB /* NSDictionary+URL.m */,
 			);
@@ -409,10 +409,10 @@
 		9AECFB821CFB39DD00CCA7DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9AECFB831CFB3A2600CCA7DA /* ACVideoBrowserController.h */,
-				9AECFB841CFB3A2600CCA7DA /* ACVideoBrowserController.m */,
-				9AECFB851CFB3A2600CCA7DA /* ACWapBrowserController.h */,
-				9AECFB861CFB3A2600CCA7DA /* ACWapBrowserController.m */,
+				9AECFB831CFB3A2600CCA7DA /* ZXVideoBrowserController.h */,
+				9AECFB841CFB3A2600CCA7DA /* ZXVideoBrowserController.m */,
+				9AECFB851CFB3A2600CCA7DA /* ZXWapBrowserController.h */,
+				9AECFB861CFB3A2600CCA7DA /* ZXWapBrowserController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -420,8 +420,8 @@
 		9AECFB891CFB3EC400CCA7DA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9AECFB8A1CFB3EC400CCA7DA /* ACWebBrowserToolBar.h */,
-				9AECFB8B1CFB3EC400CCA7DA /* ACWebBrowserToolBar.m */,
+				9AECFB8A1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.h */,
+				9AECFB8B1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -537,10 +537,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AAFB1CA1CEDF00B00D70626 /* AFURLSessionManager.m in Sources */,
-				9AECFB801CFB39A700CCA7DA /* ACMraidWebView.m in Sources */,
+				9AECFB801CFB39A700CCA7DA /* ZXMraidWebView.m in Sources */,
 				845CAAD81CFD858D0060B8DD /* VideoViewController.m in Sources */,
-				9A93FFFB1CFB606E00D1FB2E /* ACAnimationController.m in Sources */,
-				9AECFB7B1CFB2E4A00CCA7DA /* ACFileUtil.m in Sources */,
+				9A93FFFB1CFB606E00D1FB2E /* ZXAnimationController.m in Sources */,
+				9AECFB7B1CFB2E4A00CCA7DA /* ZXFileUtil.m in Sources */,
 				9AAFB1C71CEDF00B00D70626 /* AFURLConnectionOperation.m in Sources */,
 				9AAFB1C21CEDF00B00D70626 /* AFHTTPRequestOperation.m in Sources */,
 				84B7FB5D1CEB23DD00145C1E /* Base64Util.m in Sources */,
@@ -553,14 +553,14 @@
 				9AAFB1D41CEDF00B00D70626 /* UIWebView+AFNetworking.m in Sources */,
 				841180651CEC195F002542AB /* ZXAdDeviceUtil.m in Sources */,
 				9AAFB1CF1CEDF00B00D70626 /* UIAlertView+AFNetworking.m in Sources */,
-				9AECFB8C1CFB3EC400CCA7DA /* ACWebBrowserToolBar.m in Sources */,
+				9AECFB8C1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.m in Sources */,
 				8411806A1CEC36B7002542AB /* NSDictionary+URL.m in Sources */,
 				9AAFB1C41CEDF00B00D70626 /* AFHTTPSessionManager.m in Sources */,
 				9A9300011CFB689600D1FB2E /* ZXInterstitialView.m in Sources */,
-				9AECFB811CFB39A700CCA7DA /* ACWebView.m in Sources */,
-				9AECFB881CFB3A2600CCA7DA /* ACWapBrowserController.m in Sources */,
+				9AECFB811CFB39A700CCA7DA /* ZXWebView.m in Sources */,
+				9AECFB881CFB3A2600CCA7DA /* ZXWapBrowserController.m in Sources */,
 				845CAACC1CFD82430060B8DD /* ZXBaseViewController.m in Sources */,
-				9AECFB6F1CFB1D6300CCA7DA /* ACUIUtil.m in Sources */,
+				9AECFB6F1CFB1D6300CCA7DA /* ZXUIUtil.m in Sources */,
 				9AECFB761CFB1EF300CCA7DA /* ZXAdRequestView.m in Sources */,
 				845CAAD21CFD85710060B8DD /* FullViewController.m in Sources */,
 				845CAAD51CFD85810060B8DD /* InterstitialViewController.m in Sources */,
@@ -571,7 +571,7 @@
 				9AAFB1D21CEDF00B00D70626 /* UIProgressView+AFNetworking.m in Sources */,
 				9AAFB1C61CEDF00B00D70626 /* AFSecurityPolicy.m in Sources */,
 				9AAFB1D01CEDF00B00D70626 /* UIButton+AFNetworking.m in Sources */,
-				9AECFB871CFB3A2600CCA7DA /* ACVideoBrowserController.m in Sources */,
+				9AECFB871CFB3A2600CCA7DA /* ZXVideoBrowserController.m in Sources */,
 				841180621CEC1084002542AB /* ZXAdBaseView.m in Sources */,
 				9AAFB1C81CEDF00B00D70626 /* AFURLRequestSerialization.m in Sources */,
 				9AAFB1C51CEDF00B00D70626 /* AFNetworkReachabilityManager.m in Sources */,

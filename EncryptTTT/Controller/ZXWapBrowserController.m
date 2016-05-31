@@ -1,22 +1,9 @@
-/************************************************
- *fileName:     ACWebBrowserToolBar.h
- *description:  web view controller,网页页面控制controller
- *function detail:(1)web控制
- *                (2)方向控制
- *                (3)toolbar控制
- *
- *delegate: UIWebViewDelegate
- *
- *Created by:Chilly Zhong
- *Created date:12-1-15
- *modify by:Joson Ma on 2013-3-4
- *Copyright 2011-2013 AdChina. All rights reserved.
- ************************************************/
-
-#import "ACWapBrowserController.h"
 
 
-@implementation ACWapBrowserController
+#import "ZXWapBrowserController.h"
+
+
+@implementation ZXWapBrowserController
 @synthesize delegate;
 @synthesize wapSiteUrl;
 //@synthesize parentViewControllerForBrowser;
@@ -27,7 +14,7 @@
 
 #pragma mark - View lifecycle
 
-static ACWapBrowserController *_wapBrowserController = nil;
+static ZXWapBrowserController *_wapBrowserController = nil;
 
 #pragma mark -
 #pragma mark -----------------------------------System method---------------------------------------
@@ -167,9 +154,9 @@ static ACWapBrowserController *_wapBrowserController = nil;
     self.stopItem = nil;
 }
 
-+ (ACWapBrowserController *)sharedWapBrowserController {
++ (ZXWapBrowserController *)sharedWapBrowserController {
     if (!_wapBrowserController) {
-        _wapBrowserController = [[ACWapBrowserController alloc] init];
+        _wapBrowserController = [[ZXWapBrowserController alloc] init];
     }
     return _wapBrowserController;
 }
@@ -211,7 +198,7 @@ static ACWapBrowserController *_wapBrowserController = nil;
         self.delegate = nil;
     }
     
-    [ACWapBrowserController clearOldWapBrowser];
+    [ZXWapBrowserController clearOldWapBrowser];
 }
 
 - (void)showNavItemWithTitle:(NSString *)itemTitle

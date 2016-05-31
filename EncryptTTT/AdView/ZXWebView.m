@@ -7,11 +7,11 @@
 //
 
 #import <math.h>
-#import "ACWebView.h"
+#import "ZXWebView.h"
 
 #import <AVFoundation/AVFoundation.h>
 
-@implementation ACWebView
+@implementation ZXWebView
 
 
 
@@ -46,7 +46,7 @@
 -(void) addWebView{
     if(!self.webView) {
         // Add gifWebView
-        ACMraidWebView *gifView = [[ACMraidWebView alloc] initWithFrame:self.bounds];
+        ZXMraidWebView *gifView = [[ZXMraidWebView alloc] initWithFrame:self.bounds];
         gifView.backgroundColor = [UIColor clearColor];
         gifView.opaque = NO;
         gifView.userInteractionEnabled = YES;
@@ -84,7 +84,7 @@
 		
 		if ([cmd isEqualToString:@"adclick"]) {
             if (param== nil || [param isEqualToString:@""]) {
-                [self showWapBrowser];
+                [self showWebViewWithUrl:[self.adModel getLandingPag]];
             } else {
                 [self showWebViewWithUrl:param];
             }

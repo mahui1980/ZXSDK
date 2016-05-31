@@ -6,9 +6,9 @@
 //  Copyright © 2016年 DS. All rights reserved.
 //
 
-#import "ACWebView.h"
+#import "ZXWebView.h"
 
-@interface ZXBannerView : ACWebView
+@interface ZXBannerView : ZXWebView
 
 +(ZXBannerView *)createAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect;
 @end

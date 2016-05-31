@@ -7,7 +7,7 @@
 //
 
 #import "ZXBannerView.h"
-#import "ACAnimationController.h"
+#import "ZXAnimationController.h"
 @implementation ZXBannerView
 
 +(ZXBannerView *)createAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect {
@@ -21,7 +21,7 @@
     [self startRefreshTimerWithDelay:60];
     
     if(webView==self.webView){
-        [ACAnimationController commitAnimationForView:self mask:AnimationMaskRandom];
+        [ZXAnimationController commitAnimationForView:self mask:AnimationMaskRandom];
     }
 }
 

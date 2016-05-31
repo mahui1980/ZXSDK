@@ -1,16 +1,6 @@
-/************************************************
- *fileName:     ACUIUtil.m
- *description:  File处理
- *function detail:File处理
- *delegate:
- *Created by:Chilly Zhong
- *Created date:12-1-10
- *Modified by:Joson Ma on 2013-2-23
- *Copyright 2011-2013 AdChina. All rights reserved.
- ************************************************/
-#import "ACUIUtil.h"
-//#import "ACConstants.h"
-@implementation ACUIUtil
+
+#import "ZXUIUtil.h"
+@implementation ZXUIUtil
 
 // Used to get scaled frame for gif image
 // If view's w/h == image's w/h, scale to viewSize
@@ -75,16 +65,9 @@
     msgComposer.recipients = [NSArray arrayWithObjects:address, nil];
     msgComposer.body = content;
     
-    if ([viewController respondsToSelector:@selector(presentViewController:animated:completion:)])
-    {
-        [viewController presentViewController:msgComposer
-                                               animated:YES
-                                             completion:nil];
-    }
-    else
-    {
-        [viewController presentModalViewController:msgComposer animated:YES];
-    }
+    [viewController presentViewController:msgComposer
+                                 animated:YES
+                               completion:nil];
     
 }
 
@@ -102,7 +85,7 @@
         return NO;
     }
     return (!view.hidden &&
-            ![ACUIUtil ADCHINAViewHasHiddenAncestor:view]);//&&
+            ![ZXUIUtil ADCHINAViewHasHiddenAncestor:view]);//&&
 //            ![ACUIUtil ADCHINAViewIsDescendantOfKeyWindow:view]);// &&
 //            [ACUIUtil ADCHINAViewIntersectsKeyWindow:view]);
 }
@@ -268,7 +251,7 @@ CGRect AdChinaFixOriginRotation(CGRect rect, UIInterfaceOrientation orientation,
 
 +(CGRect)getFrameByOrientation:(UIInterfaceOrientation)ori withWeb:(UIWebView *)theWebView{
     CGRect webViewFrame = theWebView.frame;
-    webViewFrame.size = [ACUIUtil screenSizeIncludingStatusBar:YES];
+    webViewFrame.size = [ZXUIUtil screenSizeIncludingStatusBar:YES];
     if(ori == UIInterfaceOrientationLandscapeLeft || ori == UIInterfaceOrientationLandscapeRight){
         if (webViewFrame.size.width < webViewFrame.size.height) {
             CGFloat fTmep = webViewFrame.size.width;

@@ -1,13 +1,4 @@
-/************************************************
- *fileName:     ACUIUtil.h
- *description:  UI处理
- *function detail:UI处理
- *delegate:
- *Created by:Chilly Zhong
- *Created date:12-1-10
- *Modified by:Joson Ma on 2013-2-23
- *Copyright 2011-2013 AdChina. All rights reserved.
- ************************************************/
+
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
@@ -17,7 +8,7 @@
 
 #define getFormatString(fmt, ...)    [NSString stringWithFormat:fmt, __VA_ARGS__]
 
-@interface ACUIUtil : NSObject
+@interface ZXUIUtil : NSObject
 //判断view是否有显示
 +(BOOL)ADCHINAViewIsVisible:(UIView *)view;
 

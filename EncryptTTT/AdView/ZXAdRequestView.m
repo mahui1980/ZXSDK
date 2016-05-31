@@ -9,7 +9,7 @@
 #import "ZXAdRequestView.h"
 #import "AFNetworking.h"
 #import "NSDictionary+URL.h"
-#import "ACFileUtil.h"
+#import "ZXFileUtil.h"
 @implementation ZXAdRequestView
 
 
@@ -49,7 +49,7 @@
 
 
 -(void)loadData:(NSString *)strURL{
-    NSString *dataPath = [ACFileUtil getSavedAdPathWithUrl:strURL];
+    NSString *dataPath = [ZXFileUtil getSavedAdPathWithUrl:strURL];
     NSData *data = [NSData dataWithContentsOfFile:dataPath];
     if (data != nil) {
         [self showData:dataPath];
@@ -75,8 +75,8 @@
     }];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [ACFileUtil saveAdData:responseObject withUrl:strURL];
-        NSString *dataPath = [ACFileUtil getSavedAdPathWithUrl:strURL];
+        [ZXFileUtil saveAdData:responseObject withUrl:strURL];
+        NSString *dataPath = [ZXFileUtil getSavedAdPathWithUrl:strURL];
         [self showData:dataPath];
         NSLog(@"下载成功");
         

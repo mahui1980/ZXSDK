@@ -6,9 +6,9 @@
 //  Copyright © 2016年 DS. All rights reserved.
 //
 
-#import "ACWebView.h"
+#import "ZXWebView.h"
 
-@interface ZXFullScreenView : ACWebView
+@interface ZXFullScreenView : ZXWebView
 
 @property (nonatomic, strong) UILabel *countDownLabel;
 

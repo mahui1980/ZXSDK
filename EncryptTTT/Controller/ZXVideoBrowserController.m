@@ -8,16 +8,16 @@
  *modify by:Joson Ma on 2013-3-4
  *Copyright 2011-2013 AdChina. All rights reserved.
  ************************************************/
-#import "ACVideoBrowserController.h"
-#import "ACUIUtil.h"
+#import "ZXVideoBrowserController.h"
+#import "ZXUIUtil.h"
 
-@implementation ACVideoBrowserController
+@implementation ZXVideoBrowserController
 @synthesize videoUrl;
 @synthesize moviePlayer;
 @synthesize parentViewControllerForVideo;
 @synthesize delegate;
 
-static ACVideoBrowserController *_videoBrowserController = nil;
+static ZXVideoBrowserController *_videoBrowserController = nil;
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];    
@@ -28,9 +28,9 @@ static ACVideoBrowserController *_videoBrowserController = nil;
     
 }
 
-+ (ACVideoBrowserController *)sharedVideoBrowserController {
++ (ZXVideoBrowserController *)sharedVideoBrowserController {
     if (!_videoBrowserController) {
-        _videoBrowserController = [[ACVideoBrowserController alloc] init];
+        _videoBrowserController = [[ZXVideoBrowserController alloc] init];
     }
     return _videoBrowserController;
 }
@@ -118,7 +118,7 @@ static ACVideoBrowserController *_videoBrowserController = nil;
 - (void)viewDidLoad {
 	
 	self.view.backgroundColor =  [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0.5];
-	self.view.frame = [ACUIUtil fullScreenFrameNoIncludeStatusBar];
+	self.view.frame = [ZXUIUtil fullScreenFrameNoIncludeStatusBar];
 	[self loadVideoWithUrl:self.videoUrl];
 	
 	if ([self.parentViewControllerForVideo isKindOfClass:[UINavigationController class]]) {
