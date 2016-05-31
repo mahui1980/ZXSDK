@@ -28,7 +28,10 @@
 
 -(void)closeView {
     [self.adModel sendTracking:@"20"];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didColseAdView:)]) {
+        [self.delegate didCloseAdView:self];
+    }
     [self removeFromSuperview];
-
+    
 }
 @end

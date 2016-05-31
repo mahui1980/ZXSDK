@@ -23,6 +23,7 @@
         self.setMonitorWeb = [NSMutableSet set];
         [self addWebView];
         [self addActivityView];
+        _bSendTracking = NO;
     }
     return self;
 }
@@ -93,8 +94,6 @@
 			[self didFinishBrowsingWapSite];
 		} else if ([cmd isEqualToString:@"openvideo"]) {
 			[self showVideoBrowserWithUrl:param];
-		} else if ([cmd isEqualToString:@"actbtnclick"]) {
-			[self performButtonAction];
 		} else if ([cmd isEqualToString:@"openstore"]) {
             
         } else if ([cmd isEqualToString:@"call"]) {
@@ -174,6 +173,10 @@
         [self resizeWebPage];
         [self addClickGestureRecognizer];
         [self.adModel sendTracking:@"2"];
+        if ((!self.bSendTracking) && self.delegate && [self.delegate respondsToSelector:@selector(didShowAdView:)]) {
+            self.bSendTracking = YES;
+            [self.delegate didShowAdView:self];
+        }
     }
     
 }

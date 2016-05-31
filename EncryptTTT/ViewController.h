@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Base64Util.h"
 #import "ZXAdRequestView.h"
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 
+@property (nonatomic, strong) UITableView *tableview;
 @end
 

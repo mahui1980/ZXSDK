@@ -13,10 +13,14 @@
 #import "ACWapBrowserController.h"
 #import "ACVideoBrowserController.h"
 #import "ZXAdConstant.h"
-@interface ZXAdBaseViewDelegate
+@class ZXAdBaseView;
+@protocol ZXAdBaseViewDelegate<NSObject>
 
-
--(void)didShowAdView;
+@optional
+-(void)didShowAdView:(ZXAdBaseView *)adView;
+-(void)didOpenLangingPage;
+-(void)didCloseLangingPage;
+-(void)didCloseAdView:(ZXAdBaseView *)adView;
 
 @end
 
@@ -26,7 +30,7 @@
 -(ZXAdBaseView *)initAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect;
 
 
-@property (nonatomic, weak) id delegate;
+@property (nonatomic, weak) id<ZXAdBaseViewDelegate>  delegate;
 @property int nRefresh;
 @property (nonatomic, strong) NSTimer *refreshTimer;
 @property (nonatomic, strong) UITapGestureRecognizer* tapGesture;

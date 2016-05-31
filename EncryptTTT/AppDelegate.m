@@ -20,6 +20,17 @@
     return YES;
 }
 
+
+- (void)setUpAppearance
+{
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor clearColor]];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    [UINavigationBar appearance].backgroundColor = [UIColor colorWithRed:144.0/255.0 green:144.0/255.0 blue:144.0/255.0 alpha:1];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"background_home"] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

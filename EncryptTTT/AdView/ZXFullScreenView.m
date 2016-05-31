@@ -49,7 +49,11 @@
     if (bReturn) {
         self.countDownLabel.hidden = YES;
         [self.adModel sendTracking:@"21"];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(didCloseAdView:)]) {
+            [self.delegate didCloseAdView:self];
+        }
         [self removeFromSuperview];
+        
     }
     return bReturn;
 }

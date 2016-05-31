@@ -10,6 +10,11 @@
 		841180621CEC1084002542AB /* ZXAdBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841180611CEC1084002542AB /* ZXAdBaseView.m */; };
 		841180651CEC195F002542AB /* ZXAdDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 841180641CEC195F002542AB /* ZXAdDeviceUtil.m */; };
 		8411806A1CEC36B7002542AB /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 841180691CEC36B7002542AB /* NSDictionary+URL.m */; };
+		845CAACC1CFD82430060B8DD /* ZXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAACB1CFD82430060B8DD /* ZXBaseViewController.m */; };
+		845CAACF1CFD85660060B8DD /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAACE1CFD85660060B8DD /* BannerViewController.m */; };
+		845CAAD21CFD85710060B8DD /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAAD11CFD85710060B8DD /* FullViewController.m */; };
+		845CAAD51CFD85810060B8DD /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAAD41CFD85810060B8DD /* InterstitialViewController.m */; };
+		845CAAD81CFD858D0060B8DD /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAAD71CFD858D0060B8DD /* VideoViewController.m */; };
 		84854A981CED58D000D1DA8F /* 1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 84854A971CED58D000D1DA8F /* 1.p12 */; };
 		84854A9A1CED593000D1DA8F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84854A991CED593000D1DA8F /* Security.framework */; };
 		84854A9C1CED594400D1DA8F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84854A9B1CED594400D1DA8F /* CoreFoundation.framework */; };
@@ -80,6 +85,16 @@
 		841180661CEC1F08002542AB /* ZXAdConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXAdConstant.h; sourceTree = "<group>"; };
 		841180681CEC36B7002542AB /* NSDictionary+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URL.h"; sourceTree = "<group>"; };
 		841180691CEC36B7002542AB /* NSDictionary+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URL.m"; sourceTree = "<group>"; };
+		845CAACA1CFD82430060B8DD /* ZXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXBaseViewController.h; sourceTree = "<group>"; };
+		845CAACB1CFD82430060B8DD /* ZXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXBaseViewController.m; sourceTree = "<group>"; };
+		845CAACD1CFD85660060B8DD /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		845CAACE1CFD85660060B8DD /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		845CAAD01CFD85710060B8DD /* FullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullViewController.h; sourceTree = "<group>"; };
+		845CAAD11CFD85710060B8DD /* FullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullViewController.m; sourceTree = "<group>"; };
+		845CAAD31CFD85810060B8DD /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		845CAAD41CFD85810060B8DD /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		845CAAD61CFD858D0060B8DD /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		845CAAD71CFD858D0060B8DD /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		84854A971CED58D000D1DA8F /* 1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.p12; sourceTree = "<group>"; };
 		84854A991CED593000D1DA8F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		84854A9B1CED594400D1DA8F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -283,6 +298,16 @@
 				84B7FB451CEB235200145C1E /* ViewController.h */,
 				84B7FB461CEB235200145C1E /* ViewController.m */,
 				84B7FB3F1CEB235200145C1E /* Supporting Files */,
+				845CAACA1CFD82430060B8DD /* ZXBaseViewController.h */,
+				845CAACB1CFD82430060B8DD /* ZXBaseViewController.m */,
+				845CAACD1CFD85660060B8DD /* BannerViewController.h */,
+				845CAACE1CFD85660060B8DD /* BannerViewController.m */,
+				845CAAD01CFD85710060B8DD /* FullViewController.h */,
+				845CAAD11CFD85710060B8DD /* FullViewController.m */,
+				845CAAD31CFD85810060B8DD /* InterstitialViewController.h */,
+				845CAAD41CFD85810060B8DD /* InterstitialViewController.m */,
+				845CAAD61CFD858D0060B8DD /* VideoViewController.h */,
+				845CAAD71CFD858D0060B8DD /* VideoViewController.m */,
 			);
 			path = EncryptTTT;
 			sourceTree = "<group>";
@@ -513,6 +538,7 @@
 			files = (
 				9AAFB1CA1CEDF00B00D70626 /* AFURLSessionManager.m in Sources */,
 				9AECFB801CFB39A700CCA7DA /* ACMraidWebView.m in Sources */,
+				845CAAD81CFD858D0060B8DD /* VideoViewController.m in Sources */,
 				9A93FFFB1CFB606E00D1FB2E /* ACAnimationController.m in Sources */,
 				9AECFB7B1CFB2E4A00CCA7DA /* ACFileUtil.m in Sources */,
 				9AAFB1C71CEDF00B00D70626 /* AFURLConnectionOperation.m in Sources */,
@@ -523,6 +549,7 @@
 				9A93FFFE1CFB62DB00D1FB2E /* ZXFullScreenView.m in Sources */,
 				9AAFB1C31CEDF00B00D70626 /* AFHTTPRequestOperationManager.m in Sources */,
 				9AAFB1CE1CEDF00B00D70626 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				845CAACF1CFD85660060B8DD /* BannerViewController.m in Sources */,
 				9AAFB1D41CEDF00B00D70626 /* UIWebView+AFNetworking.m in Sources */,
 				841180651CEC195F002542AB /* ZXAdDeviceUtil.m in Sources */,
 				9AAFB1CF1CEDF00B00D70626 /* UIAlertView+AFNetworking.m in Sources */,
@@ -532,8 +559,11 @@
 				9A9300011CFB689600D1FB2E /* ZXInterstitialView.m in Sources */,
 				9AECFB811CFB39A700CCA7DA /* ACWebView.m in Sources */,
 				9AECFB881CFB3A2600CCA7DA /* ACWapBrowserController.m in Sources */,
+				845CAACC1CFD82430060B8DD /* ZXBaseViewController.m in Sources */,
 				9AECFB6F1CFB1D6300CCA7DA /* ACUIUtil.m in Sources */,
 				9AECFB761CFB1EF300CCA7DA /* ZXAdRequestView.m in Sources */,
+				845CAAD21CFD85710060B8DD /* FullViewController.m in Sources */,
+				845CAAD51CFD85810060B8DD /* InterstitialViewController.m in Sources */,
 				84B7FB471CEB235200145C1E /* ViewController.m in Sources */,
 				9A9300041CFB6B0C00D1FB2E /* ZXVideoView.m in Sources */,
 				84B7FB441CEB235200145C1E /* AppDelegate.m in Sources */,
@@ -661,14 +691,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 惠 马 (6D9DWD7F3L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kaiwen Yang (FW92LUU3C8)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EncryptTTT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mahui.test.EncryptTTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fe0462a5-ce21-4b5a-9b7b-071d824e31a6";
+				PROVISIONING_PROFILE = "1f1302cc-d8e3-4137-8301-280c9331063d";
 			};
 			name = Debug;
 		};
@@ -676,14 +706,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 惠 马 (6D9DWD7F3L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kaiwen Yang (FW92LUU3C8)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EncryptTTT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mahui.test.EncryptTTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fe0462a5-ce21-4b5a-9b7b-071d824e31a6";
+				PROVISIONING_PROFILE = "1f1302cc-d8e3-4137-8301-280c9331063d";
 			};
 			name = Release;
 		};

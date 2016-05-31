@@ -12,6 +12,7 @@
 #import "ACMraidWebView.h"
 @interface ACWebView : ZXAdRequestView <UIWebViewDelegate>
 
+@property Boolean bSendTracking;
 @property Boolean bProximityMonitoringEnabled;
 @property (nonatomic, strong) NSMutableSet *setMonitorWeb;
 @property (nonatomic, strong) UIActivityIndicatorView *activityView;
@@ -19,7 +20,6 @@
 -(void) addWebView;
 -(void)smsContent:(NSString *)strSmsContent toPhoneNumber:(NSString *)strSmsPhoneNumber;
 -(void)callPhoneNumber:(NSString *)strPhoneNumber;
--(void)performButtonAction;
 - (void)showWapBrowser;
 - (void)resizeWebPage;
 -(void) addActivityView;

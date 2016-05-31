@@ -72,6 +72,9 @@ static NSString* AdViewUserAgent = nil;
     if ([self.adModel getLandingPag]) {
         [self showWebViewWithUrl:[self.adModel getLandingPag]];
         [self.adModel sendTracking:@"11"];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(didOpenLangingPage)]) {
+            [self.delegate didOpenLangingPage];
+        }
     }
     
     
@@ -251,6 +254,9 @@ static NSString* AdViewUserAgent = nil;
     [[ACWapBrowserController sharedWapBrowserController] dismissViewControllerAnimated:YES completion:nil];
     self.adBrowserOpen = NO;
     [self resumeStoppedRefreshTimer];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didCloseLangingPage)]) {
+        [self.delegate didCloseLangingPage];
+    }
 }
 
 /************************************************
@@ -273,6 +279,9 @@ static NSString* AdViewUserAgent = nil;
 -(void)didFinishBrowsingVideo:(ACVideoBrowserController *) videoBrowserController{
     [[ACVideoBrowserController sharedVideoBrowserController]  dismissViewControllerAnimated:YES completion:nil];
     [self resumeStoppedRefreshTimer];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didCloseLangingPage)]) {
+        [self.delegate didCloseLangingPage];
+    }
 }
 
 
