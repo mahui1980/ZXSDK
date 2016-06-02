@@ -11,5 +11,5 @@
 @interface ZXAdRequestView : ZXAdBaseView
 
 
-
+-(void)loadData:(NSString *)strURL;
 @end

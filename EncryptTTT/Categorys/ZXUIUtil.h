@@ -29,4 +29,7 @@
 +(CGRect)getFrameByOrientation:(UIInterfaceOrientation)ori withWeb:(UIWebView *)theWebView;
 
 +(CGRect)fullScreenFrameNoIncludeStatusBar;
+
+//删除空格和回车
++(NSString *)strRemoveSignal:(NSString *)strTemp;
 @end

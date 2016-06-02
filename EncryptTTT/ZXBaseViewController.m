@@ -56,7 +56,7 @@
     UIButton *btnSubmit = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
     [btnSubmit setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btnSubmit setBackgroundColor:[UIColor redColor]];
-    [btnSubmit setTitle:@"登录" forState:UIControlStateNormal];
+    [btnSubmit setTitle:@"展示" forState:UIControlStateNormal];
     btnSubmit.titleLabel.font = [UIFont systemFontOfSize:16];
     [btnSubmit addTarget:self action:@selector(submit) forControlEvents:UIControlEventTouchUpInside];
     btnSubmit.center = self.view.center;

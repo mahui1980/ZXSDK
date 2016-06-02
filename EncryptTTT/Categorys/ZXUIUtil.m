@@ -272,4 +272,12 @@ CGRect AdChinaFixOriginRotation(CGRect rect, UIInterfaceOrientation orientation,
     webViewFrame.origin.y=0;
     return webViewFrame;
 }
+
++(NSString *)strRemoveSignal:(NSString *)strTemp{
+    strTemp = [strTemp stringByReplacingOccurrencesOfString:@" " withString:@""];
+    strTemp = [strTemp stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    strTemp = [strTemp stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+
+    return strTemp;
+}
 @end

@@ -15,6 +15,7 @@
 #import "FullViewController.h"
 #import "InterstitialViewController.h"
 #import "VideoViewController.h"
+#import "VastViewController.h"
 @interface ViewController ()
 
 @end
@@ -139,7 +140,10 @@
             [self.navigationController pushViewController:v animated:YES];
         }
             break;
-        case 4:
+        case 4:{
+            VastViewController *v = [[VastViewController alloc] init];
+            [self.navigationController pushViewController:v animated:YES];
+        }
             
             break;
             

@@ -19,8 +19,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
-        self.setMonitorWeb = [NSMutableSet set];
         [self addWebView];
         [self addActivityView];
         _bSendTracking = NO;
@@ -72,55 +70,9 @@
         }
     }
     
-    NSString *requestString = [[request URL] absoluteString];
-    
-	NSArray *components = [requestString componentsSeparatedByString:@":"];
-    if ([components count] > 2 && [(NSString *)[components objectAtIndex:0] isEqualToString:@"zxadview"])
-	{
 
-		
-		NSString *cmd = (NSString *)[components objectAtIndex:1];
-		NSString *param = [(NSString *)[components objectAtIndex:2] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-		
-		if ([cmd isEqualToString:@"adclick"]) {
-            if (param== nil || [param isEqualToString:@""]) {
-                [self showWebViewWithUrl:[self.adModel getLandingPag]];
-            } else {
-                [self showWebViewWithUrl:param];
-            }
-		} else if ([cmd isEqualToString:@"openweb"]) {
-			[self showWebViewWithUrl:param];
-		} else if ([cmd isEqualToString:@"closeweb"]) {
-			[self didFinishBrowsingWapSite];
-		} else if ([cmd isEqualToString:@"openvideo"]) {
-			[self showVideoBrowserWithUrl:param];
-		} else if ([cmd isEqualToString:@"openstore"]) {
-            
-        } else if ([cmd isEqualToString:@"call"]) {
-            
-        } else if ([cmd isEqualToString:@"sms"]) {
-            
-        } 
-		return NO;
-	}
 	
 	return YES;
-}
-
-
-
--(void)handleStateChange:(id)sender{
-    if ([[UIDevice currentDevice] proximityState] == YES) {
-        for (UIWebView *webView in self.setMonitorWeb) {
-            NSString* script = [NSString stringWithFormat:@"if(typeof sdkDeviceInfo !='undefined'){sdkDeviceInfo.fireEvent('deviceproximity',{type:'deviceproximity',value:%d})};",1];
-            [webView stringByEvaluatingJavaScriptFromString:script];
-        }
-    } else {
-        for (UIWebView *webView in self.setMonitorWeb) {
-            NSString* script = [NSString stringWithFormat:@"if(typeof sdkDeviceInfo !='undefined'){sdkDeviceInfo.fireEvent('deviceproximity',{'type':'deviceproximity','value':'%d'})};",0];
-            [webView stringByEvaluatingJavaScriptFromString:script];
-        }
-    }
 }
 
 
@@ -189,40 +141,5 @@
     
 }
 
-#pragma mark -
-#pragma mark -----------------------------------Button Controls---------------------------------------
 
-
-//
-///*UIAlertViewDelegate delegate method*/
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-{
-    // Load action url when user confirmed
-	if (buttonIndex == 0) {
-        
-	}
-}
-
--(void)callPhoneNumber:(NSString *)strPhoneNumber {
-    NSString *urlString = [@"tel:" stringByAppendingString:strPhoneNumber];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
-}
-
--(void)smsContent:(NSString *)strSmsContent toPhoneNumber:(NSString *)strSmsPhoneNumber {
-
-    NSString *urlString = [@"sms:" stringByAppendingString:strSmsPhoneNumber];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
-}
-
-
--(void)showData:(NSString *)dataPath {
-    if ([self.adModel.strType isEqualToString:@"img"]) {
-        [self showImageWithFile:dataPath inWebView:self.webView];
-    } else {
-        [self showHtml5WithUrl:dataPath inWebView:self.webView baseURL:self.adModel.strUrl];
-    }
-    
-    
-    
-}
 @end

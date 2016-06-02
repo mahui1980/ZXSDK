@@ -62,16 +62,11 @@
 
 -(void)downloadData:(NSString *)strURL withPath:(NSString *)dataPath{
     
-    
-//    NSString *savedPath = [NSHomeDirectory() stringByAppendingString:[NSString stringWithFormat:@"/Documents/%@",strURL]];
     AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
     NSMutableURLRequest *request =[serializer requestWithMethod:@"GET" URLString:strURL parameters:nil error:nil];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-//    [operation setOutputStream:[NSOutputStream outputStreamToFileAtPath:savedPath append:NO]];
     [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
-        
         NSLog(@"download：%f", (float)totalBytesRead / totalBytesExpectedToRead);
-        
     }];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {

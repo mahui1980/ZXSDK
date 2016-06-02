@@ -18,12 +18,13 @@
     [super viewDidLoad];
     self.txtAID.text = @"39";
     self.txtCLID.text = @"F42564A103BB485EC81B5939E5C3F318";
+    self.title = @"视屏";
 }
 
 
 -(void)submit {
     
-    ZXVideoView *adView = [ZXVideoView createAdViewByAid:self.txtAID.text Clid:self.txtCLID.text delegate:self frame:CGRectMake(self.view.bounds.size.width/6, 100, self.view.bounds.size.width/3*2,self.view.bounds.size.width/3*2)];
+    ZXVideoView *adView = [ZXVideoView createAdViewByAid:self.txtAID.text Clid:self.txtCLID.text delegate:self frame:CGRectMake(self.view.bounds.size.width/8, 100, self.view.bounds.size.width/4*3,self.view.bounds.size.width/3*2)];
     [self.view addSubview:adView];
     adView.delegate = self;
 }

@@ -24,7 +24,7 @@
 
 @end
 
-@interface ZXAdBaseView : UIView<ZXWapBrowserDelegate>
+@interface ZXAdBaseView : UIView<ZXWapBrowserDelegate,ZXVideoBrowserDelegate>
 
 
 -(ZXAdBaseView *)initAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect;

@@ -15,5 +15,6 @@
 @property (nonatomic, strong) UIButton *closeButton;
 - (void)startPlaying;
 - (void)stopPlaying;
+- (void)closeVideoView;
 +(ZXVideoView *)createAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect;
 @end

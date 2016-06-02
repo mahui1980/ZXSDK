@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.txtAID.text = @"37";
     self.txtCLID.text = @"F42564A103BB485EC81B5939E5C3F318";
+    self.title = @"全屏";
 }
 
 
