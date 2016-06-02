@@ -15,6 +15,8 @@
 		845CAAD21CFD85710060B8DD /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAAD11CFD85710060B8DD /* FullViewController.m */; };
 		845CAAD51CFD85810060B8DD /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAAD41CFD85810060B8DD /* InterstitialViewController.m */; };
 		845CAAD81CFD858D0060B8DD /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CAAD71CFD858D0060B8DD /* VideoViewController.m */; };
+		84666E9C1CFE77BA00A145A3 /* ZXVastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84666E9B1CFE77BA00A145A3 /* ZXVastView.m */; };
+		84666E9F1CFE8AE400A145A3 /* VastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84666E9E1CFE8AE400A145A3 /* VastViewController.m */; };
 		84854A981CED58D000D1DA8F /* 1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 84854A971CED58D000D1DA8F /* 1.p12 */; };
 		84854A9A1CED593000D1DA8F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84854A991CED593000D1DA8F /* Security.framework */; };
 		84854A9C1CED594400D1DA8F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84854A9B1CED594400D1DA8F /* CoreFoundation.framework */; };
@@ -26,6 +28,8 @@
 		84B7FB4F1CEB235200145C1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B7FB4D1CEB235200145C1E /* LaunchScreen.storyboard */; };
 		84B7FB5A1CEB23AD00145C1E /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7FB581CEB23AD00145C1E /* GTMBase64.m */; };
 		84B7FB5D1CEB23DD00145C1E /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7FB5C1CEB23DD00145C1E /* Base64Util.m */; };
+		84BB71431CFFD07200AAE596 /* ZXVastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB71421CFFD07200AAE596 /* ZXVastModel.m */; };
+		84F2EA4A1D0061F900335A0F /* NSString+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2EA491D0061F900335A0F /* NSString+XML.m */; };
 		9A867B901CF34AE600D821DD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A867B8F1CF34AE600D821DD /* StoreKit.framework */; };
 		9A9300011CFB689600D1FB2E /* ZXInterstitialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9300001CFB689600D1FB2E /* ZXInterstitialView.m */; };
 		9A9300041CFB6B0C00D1FB2E /* ZXVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9300031CFB6B0C00D1FB2E /* ZXVideoView.m */; };
@@ -95,6 +99,10 @@
 		845CAAD41CFD85810060B8DD /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
 		845CAAD61CFD858D0060B8DD /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		845CAAD71CFD858D0060B8DD /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		84666E9A1CFE77BA00A145A3 /* ZXVastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXVastView.h; path = AdView/ZXVastView.h; sourceTree = "<group>"; };
+		84666E9B1CFE77BA00A145A3 /* ZXVastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXVastView.m; path = AdView/ZXVastView.m; sourceTree = "<group>"; };
+		84666E9D1CFE8AE400A145A3 /* VastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VastViewController.h; sourceTree = "<group>"; };
+		84666E9E1CFE8AE400A145A3 /* VastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VastViewController.m; sourceTree = "<group>"; };
 		84854A971CED58D000D1DA8F /* 1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.p12; sourceTree = "<group>"; };
 		84854A991CED593000D1DA8F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		84854A9B1CED594400D1DA8F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +121,10 @@
 		84B7FB591CEB23AD00145C1E /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		84B7FB5B1CEB23DD00145C1E /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
 		84B7FB5C1CEB23DD00145C1E /* Base64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Util.m; sourceTree = "<group>"; };
+		84BB71411CFFD07200AAE596 /* ZXVastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXVastModel.h; path = Model/ZXVastModel.h; sourceTree = "<group>"; };
+		84BB71421CFFD07200AAE596 /* ZXVastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXVastModel.m; path = Model/ZXVastModel.m; sourceTree = "<group>"; };
+		84F2EA481D0061F900335A0F /* NSString+XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XML.h"; sourceTree = "<group>"; };
+		84F2EA491D0061F900335A0F /* NSString+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XML.m"; sourceTree = "<group>"; };
 		9A867B8F1CF34AE600D821DD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9A9300001CFB689600D1FB2E /* ZXInterstitialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXInterstitialView.m; path = AdView/ZXInterstitialView.m; sourceTree = "<group>"; };
 		9A9300021CFB6B0C00D1FB2E /* ZXVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXVideoView.h; path = AdView/ZXVideoView.h; sourceTree = "<group>"; };
@@ -246,6 +258,8 @@
 				9A9300001CFB689600D1FB2E /* ZXInterstitialView.m */,
 				9A9300021CFB6B0C00D1FB2E /* ZXVideoView.h */,
 				9A9300031CFB6B0C00D1FB2E /* ZXVideoView.m */,
+				84666E9A1CFE77BA00A145A3 /* ZXVastView.h */,
+				84666E9B1CFE77BA00A145A3 /* ZXVastView.m */,
 			);
 			name = AdView;
 			sourceTree = "<group>";
@@ -253,6 +267,8 @@
 		841180671CEC36B7002542AB /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				84F2EA481D0061F900335A0F /* NSString+XML.h */,
+				84F2EA491D0061F900335A0F /* NSString+XML.m */,
 				9A93FFF91CFB606E00D1FB2E /* ZXAnimationController.h */,
 				9A93FFFA1CFB606E00D1FB2E /* ZXAnimationController.m */,
 				9AECFB791CFB2E4A00CCA7DA /* ZXFileUtil.h */,
@@ -308,6 +324,8 @@
 				845CAAD41CFD85810060B8DD /* InterstitialViewController.m */,
 				845CAAD61CFD858D0060B8DD /* VideoViewController.h */,
 				845CAAD71CFD858D0060B8DD /* VideoViewController.m */,
+				84666E9D1CFE8AE400A145A3 /* VastViewController.h */,
+				84666E9E1CFE8AE400A145A3 /* VastViewController.m */,
 			);
 			path = EncryptTTT;
 			sourceTree = "<group>";
@@ -402,6 +420,8 @@
 			children = (
 				9AECFB711CFB1E7200CCA7DA /* ZXAdModel.h */,
 				9AECFB721CFB1E7200CCA7DA /* ZXAdModel.m */,
+				84BB71411CFFD07200AAE596 /* ZXVastModel.h */,
+				84BB71421CFFD07200AAE596 /* ZXVastModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -536,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84666E9F1CFE8AE400A145A3 /* VastViewController.m in Sources */,
 				9AAFB1CA1CEDF00B00D70626 /* AFURLSessionManager.m in Sources */,
 				9AECFB801CFB39A700CCA7DA /* ZXMraidWebView.m in Sources */,
 				845CAAD81CFD858D0060B8DD /* VideoViewController.m in Sources */,
@@ -555,6 +576,7 @@
 				9AAFB1CF1CEDF00B00D70626 /* UIAlertView+AFNetworking.m in Sources */,
 				9AECFB8C1CFB3EC400CCA7DA /* ZXWebBrowserToolBar.m in Sources */,
 				8411806A1CEC36B7002542AB /* NSDictionary+URL.m in Sources */,
+				84666E9C1CFE77BA00A145A3 /* ZXVastView.m in Sources */,
 				9AAFB1C41CEDF00B00D70626 /* AFHTTPSessionManager.m in Sources */,
 				9A9300011CFB689600D1FB2E /* ZXInterstitialView.m in Sources */,
 				9AECFB811CFB39A700CCA7DA /* ZXWebView.m in Sources */,
@@ -563,6 +585,7 @@
 				9AECFB6F1CFB1D6300CCA7DA /* ZXUIUtil.m in Sources */,
 				9AECFB761CFB1EF300CCA7DA /* ZXAdRequestView.m in Sources */,
 				845CAAD21CFD85710060B8DD /* FullViewController.m in Sources */,
+				84F2EA4A1D0061F900335A0F /* NSString+XML.m in Sources */,
 				845CAAD51CFD85810060B8DD /* InterstitialViewController.m in Sources */,
 				84B7FB471CEB235200145C1E /* ViewController.m in Sources */,
 				9A9300041CFB6B0C00D1FB2E /* ZXVideoView.m in Sources */,
@@ -572,6 +595,7 @@
 				9AAFB1C61CEDF00B00D70626 /* AFSecurityPolicy.m in Sources */,
 				9AAFB1D01CEDF00B00D70626 /* UIButton+AFNetworking.m in Sources */,
 				9AECFB871CFB3A2600CCA7DA /* ZXVideoBrowserController.m in Sources */,
+				84BB71431CFFD07200AAE596 /* ZXVastModel.m in Sources */,
 				841180621CEC1084002542AB /* ZXAdBaseView.m in Sources */,
 				9AAFB1C81CEDF00B00D70626 /* AFURLRequestSerialization.m in Sources */,
 				9AAFB1C51CEDF00B00D70626 /* AFNetworkReachabilityManager.m in Sources */,
