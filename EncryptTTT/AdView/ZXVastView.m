@@ -33,11 +33,11 @@
 -(void)addCloseButton{
     // Add Close Button
     self.closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.closeButton.frame = CGRectMake(CGRectGetMaxX(self.bounds) - 5, CGRectGetMinY(self.bounds), 45, 25);
+    self.closeButton.frame = CGRectMake(CGRectGetMaxX(self.bounds) - 50, CGRectGetMinY(self.bounds), 45, 25);
     self.closeButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
     [self.closeButton addTarget:self action:@selector(closeVideoView) forControlEvents:UIControlEventTouchUpInside];
     [self.closeButton setBackgroundColor:[UIColor clearColor]];
-    [self.closeButton setTitle:@"退出" forState:UIControlStateNormal];
+    [self.closeButton setTitle:@"跳过" forState:UIControlStateNormal];
     [self addSubview:self.closeButton];
 }
 
