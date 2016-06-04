@@ -19,7 +19,7 @@
 
 -(void)submit {
     
-    ZXVastView *adView = [ZXVastView createAdViewByAid:self.txtAID.text Clid:self.txtCLID.text delegate:self frame:CGRectMake(self.view.bounds.size.width/8, 100, self.view.bounds.size.width/4*3,self.view.bounds.size.width/3*2)];
+    ZXVastView *adView = [ZXVastView createAdViewByAid:@"42"  delegate:self frame:CGRectMake(self.view.bounds.size.width/8, 100, self.view.bounds.size.width/4*3,self.view.bounds.size.width/3*2)];
     [self.view addSubview:adView];
     adView.delegate = self;
 }

@@ -13,8 +13,8 @@
 @implementation ZXVastView
 
 
-+(ZXVastView *)createAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect {
-    ZXVastView *adView = [[ZXVastView alloc] initAdViewByAid:strAid Clid:strClid delegate:delegate frame:rect];
++(ZXVastView *)createAdViewByAid:(NSString *)strAid delegate:(id)delegate frame:(CGRect)rect {
+    ZXVastView *adView = [[ZXVastView alloc] initAdViewByAid:strAid Clid:nil delegate:delegate frame:rect];
     [[AVAudioSession sharedInstance] setDelegate: self];
     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error: nil];
     adView.autoPlay = YES;
@@ -203,7 +203,7 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/xml",@"text/xml",@"text/javascript",@"text/html",@"text/plain",nil];
-    NSString *encodedUrl = [ZX_AD_SDK_VAST_URL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *encodedUrl = [[NSString stringWithFormat:@"%@%@",ZX_AD_SDK_VAST_URL,self.strAId] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
     
     [manager GET:encodedUrl parameters:nil success:^(AFHTTPRequestOperation *operation,id responseObject) {

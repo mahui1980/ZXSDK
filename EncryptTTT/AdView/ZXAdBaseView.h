@@ -29,7 +29,7 @@
 
 -(ZXAdBaseView *)initAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect;
 
-
+@property (nonatomic, copy) NSString *strAId;
 @property (nonatomic, weak) id<ZXAdBaseViewDelegate>  delegate;
 @property int nRefresh;
 @property (nonatomic, strong) NSTimer *refreshTimer;

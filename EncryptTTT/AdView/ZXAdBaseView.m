@@ -18,7 +18,7 @@ static NSString* AdViewUserAgent = nil;
 
 @interface ZXAdBaseView ()<UIGestureRecognizerDelegate>
 
-@property (nonatomic, copy) NSString *strAId;
+
 @property (nonatomic, copy) NSString *strClid;
 
 @end

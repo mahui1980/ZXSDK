@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSDictionary *curDict;
 @property (nonatomic, strong) ZXVastModel *vastModel;
 
-+(ZXVastView *)createAdViewByAid:(NSString *)strAid Clid:(NSString *)strClid delegate:(id)delegate frame:(CGRect)rect;
++(ZXVastView *)createAdViewByAid:(NSString *)strAid delegate:(id)delegate frame:(CGRect)rect;
 
 
 

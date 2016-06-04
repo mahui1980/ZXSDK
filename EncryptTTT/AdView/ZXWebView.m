@@ -141,5 +141,14 @@
     
 }
 
-
+-(void)showData:(NSString *)dataPath {
+    if ([self.adModel.strType isEqualToString:@"img"]) {
+        [self showImageWithFile:dataPath inWebView:self.webView];
+    } else {
+        [self showHtml5WithUrl:dataPath inWebView:self.webView baseURL:self.adModel.strUrl];
+    }
+    
+    
+    
+}
 @end
